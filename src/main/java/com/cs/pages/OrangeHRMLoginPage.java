@@ -30,8 +30,4 @@ public final class OrangeHRMLoginPage extends BasePage {
 		return new OrangeHRMLoginPage();
 	}
 	
-	public String getTitle() {
-		return DriverManager.getDriver().getTitle();
-	}
-	
 }

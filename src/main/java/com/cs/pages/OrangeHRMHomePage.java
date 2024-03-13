@@ -16,20 +16,18 @@ public final class OrangeHRMHomePage extends BasePage {
 	
 	//methods
 	public OrangeHRMHomePage clickProfilePicArrow() {
-		DriverManager.getDriver().findElement(profilePicArrow).click();
+//		DriverManager.getDriver().findElement(profilePicArrow).click();
+		click(profilePicArrow);
 		return this;
 	}
 	
 	public OrangeHRMLoginPage clickLogoutOption() {
 		//explicit wait
-		WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(5));
-		wait.until(ExpectedConditions.presenceOfElementLocated(logoutBtn));
-/*		try {
-			Thread.sleep(3000l);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		} */														
-		DriverManager.getDriver().findElement(logoutBtn).click();
+//		WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(5));
+//		wait.until(ExpectedConditions.presenceOfElementLocated(logoutBtn));
+														
+//		DriverManager.getDriver().findElement(logoutBtn).click();
+		click(logoutBtn);
 		return new OrangeHRMLoginPage();
 	}
 		
